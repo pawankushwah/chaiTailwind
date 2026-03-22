@@ -2,6 +2,9 @@
 
 **ChaiTailwind** is a lightweight, utility-first CSS engine built entirely in JavaScript. It allows for **runtime styling** without a build step—just include the script, use the classes, and let the engine handle the rest.
 
+## 🎥 Project Process & Demo
+<video src="./process-flow.mp4" controls></video>
+
 ## 🚀 Features
 
 - **Runtime-First**: No PostCSS, Tailwind CLI, or build tools required.
