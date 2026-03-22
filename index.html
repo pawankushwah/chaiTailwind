@@ -3,18 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chai Tailwind Demo Page</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; img-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval';">
+    <title>Chai Modern Blog</title>
     <script type="module" src="./chaitailwind/index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+        }
+    </style>
 </head>
-<body>
-    <h1 class="chai-p-10 chai-bg-red-500 chai-text-white chai-rounded-lg">Hello world!</h1>
-    <h1 class="chai-p-10 chai-bg-green-500 chai-text-white chai-rounded-lg">Hello world!</h1>
-    <h1 class="chai-p-10 chai-bg-blue-500 chai-text-white chai-rounded-lg">Hello world!</h1>
-    <h1 class="chai-p-10 chai-bg-yellow-500 chai-text-white chai-rounded-lg">Hello world!</h1>
-    <h1 class="chai-p-10 chai-bg-purple-500 chai-text-white chai-rounded-lg">Hello world!</h1>
-    <h1 class="chai-p-10 chai-bg-pink-500 chai-text-white chai-rounded-lg">Hello world!</h1>
-    <h1 class="chai-p-10 chai-bg-orange-500 chai-text-white chai-rounded-lg">Hello world!</h1>
-    <h1 class="chai-p-10 chai-bg-gray-500 chai-text-white chai-rounded-lg">Hello world!</h1>
-    
+<body class="chai-min-h-screen">
+    <!-- Navbar -->
+    <nav class="chai-bg-white chai-p-4 chai-shadow-sm">
+        <div class="chai-max-w-6xl chai-mx-auto chai-flex chai-justify-between chai-items-center">
+            <h1 class="chai-font-8 chai-text-blue-600 chai-font-bold">ChaiBlog</h1>
+            <div class="chai-flex chai-gap-8">
+                <a href="blog.html" class="chai-text-gray-900 chai-font-semibold">Home</a>
+                <a href="about.html" class="chai-text-gray-600 chai-font-semibold">About</a>
+                <a href="contact.html" class="chai-text-gray-600 chai-font-semibold">Contact</a>
+                <a href="#" class="chai-bg-blue-600 chai-text-white chai-px-4 chai-py-2 chai-rounded-lg chai-cursor-pointer chai-transition-all hover:chai-bg-blue-700">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="chai-p-10 md:chai-p-20 chai-bg-white">
+        <div class="chai-max-w-6xl chai-mx-auto chai-grid chai-grid-cols-1 md:chai-grid-cols-2 chai-items-center chai-gap-12">
+            <div class="chai-flex chai-direction-col chai-gap-8">
+                <h1 class="chai-font-14 md:chai-font-20 chai-text-gray-900 chai-font-bold">The Future of Utility-First CSS is Runtime.</h1>
+                <p class="chai-font-6 chai-text-gray-500 chai-max-w-lg">
+                    Experience the power of a lightweight, JavaScript-driven styling engine. Build beautiful interfaces with simple classes, applied dynamically at runtime.
+                </p>
+                <div class="chai-flex chai-gap-4">
+                    <button class="chai-bg-blue-600 chai-text-white chai-px-8 chai-py-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition-all hover:chai-scale-105 hover:chai-bg-blue-700">Get Started</button>
+                    <button class="chai-bg-white chai-text-gray-700 chai-border-2 chai-border-gray-100 chai-px-8 chai-py-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition-all hover:chai-bg-gray-50">View Docs</button>
+                </div>
+            </div>
+            <div class="chai-rounded-24 chai-overflow-hidden chai-shadow-2xl">
+                <img src="./assets/images/hero.png" class="chai-w-full chai-h-full chai-object-cover">
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Post -->
+    <section class="chai-bg-blue-900 chai-p-10 md:chai-p-20 chai-text-white">
+        <div class="chai-max-w-6xl chai-mx-auto">
+            <div class="chai-grid chai-grid-cols-1 md:chai-grid-cols-2 chai-gap-12 chai-items-center">
+                <div class="chai-flex chai-direction-col chai-gap-6">
+                    <span class="chai-bg-blue-600 chai-text-blue-100 chai-px-3 chai-py-1 chai-rounded-full chai-text-xs chai-font-bold chai-w-max">FEATURED ARTICLE</span>
+                    <h2 class="chai-font-12 md:chai-font-16 chai-font-bold">Building a Modern Blog with ChaiTailwind</h2>
+                    <p class="chai-font-5 chai-text-blue-100">Learn how to leverage the latest features of our runtime engine to create stunning, responsive layouts without writing a single line of CSS.</p>
+                    <a href="#" class="chai-text-white chai-font-bold chai-border-b-2 chai-border-blue-500 chai-pb-1 chai-w-max chai-transition-all hover:chai-border-white">Read Full Story →</a>
+                </div>
+                <div class="chai-h-80 chai-bg-blue-800 chai-rounded-24 chai-overflow-hidden">
+                     <img src="./assets/images/post1.png" class="chai-w-full chai-h-full chai-object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Stories Grid -->
+    <main class="chai-p-10 md:chai-p-20 chai-max-w-6xl chai-mx-auto">
+        <h3 class="chai-font-10 chai-text-gray-900 chai-font-bold chai-mb-12">Recent Stories</h3>
+        <div class="chai-grid chai-grid-cols-1 md:chai-grid-cols-3 chai-gap-10">
+            <!-- Article 1 -->
+            <article class="chai-bg-white chai-rounded-24 chai-overflow-hidden chai-shadow-md chai-transition-all hover:chai-shadow-xl hover:chai-scale-102">
+                <div class="chai-h-48 chai-bg-gray-200">
+                    <img src="./assets/images/post1.png" class="chai-w-full chai-h-full chai-object-cover">
+                </div>
+                <div class="chai-p-8 chai-flex chai-direction-col chai-gap-4">
+                    <p class="chai-text-blue-600 chai-font-bold chai-text-xs">ARCHITECTURE</p>
+                    <h4 class="chai-font-7 chai-text-gray-900 chai-font-bold">Utility-First Design Patterns</h4>
+                    <p class="chai-text-gray-500 chai-font-4">Explore why developers are moving away from monolithic CSS... </p>
+                    <a href="#" class="chai-text-blue-600 chai-font-bold chai-transition-all hover:chai-text-blue-800">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="chai-bg-white chai-rounded-24 chai-overflow-hidden chai-shadow-md chai-transition-all hover:chai-shadow-xl hover:chai-scale-102">
+                <div class="chai-h-48 chai-bg-gray-200">
+                    <img src="./assets/images/post2.png" class="chai-w-full chai-h-full chai-object-cover">
+                </div>
+                <div class="chai-p-8 chai-flex chai-direction-col chai-gap-4">
+                    <p class="chai-text-blue-600 chai-font-bold chai-text-xs">WORKFLOW</p>
+                    <h4 class="chai-font-7 chai-text-gray-900 chai-font-bold">Design Systems for Teams</h4>
+                    <p class="chai-text-gray-500 chai-font-4">How to maintain consistency across large scale applications...</p>
+                    <a href="#" class="chai-text-blue-600 chai-font-bold chai-transition-all hover:chai-text-blue-800">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="chai-bg-white chai-rounded-24 chai-overflow-hidden chai-shadow-md chai-transition-all hover:chai-shadow-xl hover:chai-scale-102">
+                <div class="chai-h-48 chai-bg-gray-200">
+                    <img src="./assets/images/post3.png" class="chai-w-full chai-h-full chai-object-cover">
+                </div>
+                <div class="chai-p-8 chai-flex chai-direction-col chai-gap-4">
+                    <p class="chai-text-blue-600 chai-font-bold chai-text-xs">TYPOGRAPHY</p>
+                    <h4 class="chai-font-7 chai-text-gray-900 chai-font-bold">Top 10 Fonts for Tech Blogs</h4>
+                    <p class="chai-text-gray-500 chai-font-4">Choosing the right typeface can make or break your reader's...</p>
+                    <a href="#" class="chai-text-blue-600 chai-font-bold chai-transition-all hover:chai-text-blue-800">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="chai-bg-white chai-p-16 chai-border-t-2 chai-border-gray-100">
+        <div class="chai-max-w-6xl chai-mx-auto chai-grid chai-grid-cols-2 md:chai-grid-cols-4 chai-gap-12">
+            <div class="chai-col-span-1 md:chai-col-span-1">
+                <h3 class="chai-font-8 chai-text-blue-600 chai-font-bold chai-mb-4">ChaiBlog</h3>
+                <p class="chai-text-gray-500">The premier destination for modern web insights.</p>
+            </div>
+            <div>
+                <h4 class="chai-font-bold chai-mb-4">Explore</h4>
+                <div class="chai-flex chai-direction-col chai-gap-2">
+                    <a href="blog.html" class="chai-text-gray-500">Articles</a>
+                    <a href="#" class="chai-text-gray-500">Tutorials</a>
+                    <a href="#" class="chai-text-gray-500">Guides</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="chai-font-bold chai-mb-4">Company</h4>
+                <div class="chai-flex chai-direction-col chai-gap-2">
+                    <a href="about.html" class="chai-text-gray-500">About</a>
+                    <a href="#" class="chai-text-gray-500">Privacy</a>
+                    <a href="#" class="chai-text-gray-500">Terms</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="chai-font-bold chai-mb-4">Follow Us</h4>
+                <div class="chai-flex chai-gap-4">
+                    <span class="chai-w-8 chai-h-8 chai-bg-gray-100 chai-rounded-full"></span>
+                    <span class="chai-w-8 chai-h-8 chai-bg-gray-100 chai-rounded-full"></span>
+                    <span class="chai-w-8 chai-h-8 chai-bg-gray-100 chai-rounded-full"></span>
+                </div>
+            </div>
+        </div>
+        <div class="chai-max-w-6xl chai-mx-auto chai-mt-12 chai-pt-8 chai-border-t-2 chai-border-gray-50 chai-text-gray-400 chai-align-center">
+            © 2026 Chai Digital. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>
