@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; img-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval';">
+    <title>Contact Us | ChaiBlog</title>
+    <script type="module" src="./chaitailwind/index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="chai-min-h-screen">
+    <!-- Navbar -->
+    <nav class="chai-bg-white chai-p-4 chai-shadow-sm">
+        <div class="chai-max-w-6xl chai-mx-auto chai-flex chai-justify-between chai-items-center">
+            <h1 class="chai-font-8 chai-text-blue-600 chai-font-bold">ChaiBlog</h1>
+            <div class="chai-flex chai-gap-8">
+                <a href="blog.html" class="chai-text-gray-600 chai-font-semibold">Home</a>
+                <a href="about.html" class="chai-text-gray-600 chai-font-semibold">About</a>
+                <a href="contact.html" class="chai-text-gray-900 chai-font-semibold">Contact</a>
+                <a href="#" class="chai-bg-blue-600 chai-text-white chai-px-4 chai-py-2 chai-rounded-lg chai-cursor-pointer chai-transition-all hover:chai-bg-blue-700">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="chai-p-10 md:chai-p-24">
+        <div class="chai-max-w-4xl chai-mx-auto chai-bg-white chai-rounded-24 chai-shadow-xl chai-overflow-hidden chai-grid chai-grid-cols-1 md:chai-grid-cols-2">
+            <div class="chai-bg-blue-600 chai-p-12 chai-text-white chai-flex chai-direction-col chai-gap-8">
+                <h2 class="chai-font-10 chai-font-bold">Get in Touch</h2>
+                <p class="chai-text-blue-100">Have questions about ChaiTailwind or interesting in collaborating? Drop us a message!</p>
+                <div class="chai-flex chai-direction-col chai-gap-4">
+                    <div class="chai-flex chai-items-center chai-gap-4">
+                        <span class="chai-w-6 chai-h-6 chai-bg-blue-500 chai-rounded-full"></span>
+                        <span>hello@chaidigital.com</span>
+                    </div>
+                    <div class="chai-flex chai-items-center chai-gap-4">
+                        <span class="chai-w-6 chai-h-6 chai-bg-blue-500 chai-rounded-full"></span>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chai-p-12 chai-flex chai-direction-col chai-gap-6">
+                <div class="chai-flex chai-direction-col chai-gap-2">
+                    <label class="chai-text-gray-700 chai-font-bold">Name</label>
+                    <input type="text" placeholder="Your Name" class="chai-bg-gray-50 chai-p-4 chai-rounded-lg chai-border-2 chai-border-gray-100">
+                </div>
+                <div class="chai-flex chai-direction-col chai-gap-2">
+                    <label class="chai-text-gray-700 chai-font-bold">Email</label>
+                    <input type="email" placeholder="email@example.com" class="chai-bg-gray-50 chai-p-4 chai-rounded-lg chai-border-2 chai-border-gray-100">
+                </div>
+                <div class="chai-flex chai-direction-col chai-gap-2">
+                    <label class="chai-text-gray-700 chai-font-bold">Message</label>
+                    <textarea rows="4" placeholder="How can we help?" class="chai-bg-gray-50 chai-p-4 chai-rounded-lg chai-border-2 chai-border-gray-100"></textarea>
+                </div>
+                <button class="chai-bg-blue-600 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition-all hover:chai-bg-blue-700 hover:chai-scale-105">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="chai-bg-white chai-p-16 chai-border-t-2 chai-border-gray-100">
+        <div class="chai-max-w-4xl chai-mx-auto chai-align-center chai-text-gray-400">
+            © 2026 Chai Digital. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
